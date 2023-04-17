@@ -11,7 +11,9 @@ const port=1337;
 app.listen(1337,()=>{
     console.log('live on port '+port);
 });
-
+app.get('/test', function (req, res) {
+    res.send("OK")
+});
 app.get('/',async function (req, res) {
     try {
         const img_url = req.query.img;
