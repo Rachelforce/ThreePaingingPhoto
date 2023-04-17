@@ -1,7 +1,7 @@
 const gl = require("gl"); // https://npmjs.com/package/gl v4.9.0
 const THREE = require("three"); // https://npmjs.com/package/three v0.124.0
 const express = require('express');
-var getPixels = require("get-pixels")
+const getPixels = require("get-pixels")
 const {MeshBasicMaterial} = require("three");
 const promises =   require("timers/promises");
 const app=express();
@@ -32,6 +32,7 @@ app.get('/',async function (req, res) {
     }
     catch (error) {
         console.error(error);
+        res.send("ERROR")
     }
 });
 
