@@ -1,10 +1,8 @@
 const gl = require("gl"); // https://npmjs.com/package/gl v4.9.0
 const THREE = require("three"); // https://npmjs.com/package/three v0.124.0
-const fs = require("fs");
 const express = require('express');
 var getPixels = require("get-pixels")
-const {MeshPhongMaterial, MeshBasicMaterial} = require("three");
-const Canvas = require("canvas");
+const {MeshBasicMaterial} = require("three");
 const promises =   require("timers/promises");
 const app=express();
 
