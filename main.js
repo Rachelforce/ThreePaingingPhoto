@@ -43,7 +43,7 @@ app.get('/',async function (req, res) {
      const scene = new THREE.Scene();
      console.log("Start")
      scene.background = new THREE.Color('#ffffff');
-      getPixels(img_url, function (err, pixels) {
+      getPixels("1.jpg", function (err, pixels) {
 
          var texture = new THREE.DataTexture(new Uint8Array(pixels.data), pixels.shape[0], pixels.shape[1], THREE.RGBAFormat);
          texture.needsUpdate = true;
