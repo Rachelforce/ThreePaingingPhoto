@@ -77,7 +77,7 @@ app.get('/',async function (req, res) {
           console.log("loaded")
         // fs.writeFileSync(d.getTime() + ".ppm", toP3(image));
      });
-     await promises.setTimeout(1500);
+     await promises.setTimeout(5000);
      console.log("END")
      return toP3(image);
  }
